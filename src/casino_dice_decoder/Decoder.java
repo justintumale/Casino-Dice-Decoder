@@ -18,7 +18,7 @@ import java.util.logging.Logger;
  *
  * @author justintumale
  */
-public class CasinoDiceDecoder {
+public class Decoder {
     
     public static StringBuilder stringBuilder1 = new StringBuilder();
     static String finalString = "";
@@ -92,7 +92,7 @@ public class CasinoDiceDecoder {
         return 0;
     }
     
-    public static String decoder(String s){
+    public static String decode(String s){
         
         //System.out.println("Sequence: " + s + "\n");
       
@@ -164,7 +164,7 @@ public class CasinoDiceDecoder {
         }
       
         
-        decoder(s);
+        decode(s);
         
         
         //Create text file
@@ -176,25 +176,25 @@ public class CasinoDiceDecoder {
             try {
                 file1.createNewFile();
             } catch (IOException ex) {
-                Logger.getLogger(CasinoDiceDecoder.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Decoder.class.getName()).log(Level.SEVERE, null, ex);
             }
 	}
 	FileWriter fw1 = null;
         try {
             fw1 = new FileWriter(file1.getAbsoluteFile());
         } catch (IOException ex) {
-            Logger.getLogger(CasinoDiceDecoder.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Decoder.class.getName()).log(Level.SEVERE, null, ex);
         }
 	BufferedWriter br1 = new BufferedWriter(fw1);
         try {
             br1.write(finalString);
         } catch (IOException ex) {
-            Logger.getLogger(CasinoDiceDecoder.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Decoder.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             br1.close();
         } catch (IOException ex) {
-            Logger.getLogger(CasinoDiceDecoder.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Decoder.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     

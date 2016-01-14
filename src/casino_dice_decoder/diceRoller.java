@@ -14,10 +14,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
+ * This class implements DiceRoller which generates the set of states and numbers at each state
+ * @author Supriya Ramireddy
+ *         Shruti Parkar
+ *         Justin Tumale
  *
- * @author justintumale
  */
-public class diceRoller {
+public class DiceRoller {
     
         public int faceLoaded;              // holds the face of fair dice
 	public  int faceFair;                  // holds the face of loaded dice
@@ -26,7 +29,7 @@ public class diceRoller {
         
         
                 public void initializeStates(){
-            	diceRoller d = new diceRoller();
+            	DiceRoller d = new DiceRoller();
                 
 		int k = 0;
 		final Float B[] = new Float[9];       // B[] holds the data of text file

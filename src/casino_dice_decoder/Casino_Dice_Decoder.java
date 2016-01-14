@@ -17,7 +17,7 @@ public class Casino_Dice_Decoder {
      */
     public static void main(String[] args) {
         System.out.println("------------DICE ROLLER------------");
-        diceRoller a = new diceRoller();
+        DiceRoller a = new DiceRoller();
         a.initializeStates();    
         System.out.println();
         System.out.println();
@@ -25,7 +25,7 @@ public class Casino_Dice_Decoder {
         
         
         System.out.println("------------DICE DECODER------------");
-        CasinoDiceDecoder b = new CasinoDiceDecoder();
+        Decoder b = new Decoder();
         b.useFiles();
         System.out.println();
         
