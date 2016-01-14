@@ -1,0 +1,9 @@
+Transition from B to F, t(B, F) =0.8
+Transition from B to L, t(B, L) =0.2
+Transition from F to F, t(F, F) =0.5
+Transition from F to L, t(F, L) =0.5
+Transition from L to L, t(L, L) =0.7
+Transition from L to F, t(L, F) =0.3
+Transition for F, e(F, a) =0.1666667
+Transition for L, e(L, a) =0.1
+Transition for L, e(L, 6) =0.5
